@@ -1,2 +1,1 @@
-# game_website
-Website for the game
+# [game_website](https://informatikpgwv.github.io/game_website/)
