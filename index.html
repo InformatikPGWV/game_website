@@ -42,8 +42,8 @@
 
 
     <!-- === JQuery (https://releases.jquery.com) === -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Design ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -76,9 +76,51 @@
 
     <!-- === JavaScript === -->
     <script>
-        // $(document).ready(function () {
-        //     // jQuery methods go here...
-        // });
+
+        var elem = document.documentElement;
+
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
+
+        function closeFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) { /* Safari */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE11 */
+                document.msExitFullscreen();
+            }
+        }
+
+        var timesClicked = 0;
+
+        $(document).ready(function () {
+            $("#minimizeBtn").click(function () {
+                window.location.href = "about:blank"
+            });
+
+            $("#maximizeBtn").click(function () {
+                timesClicked++;
+                if (timesClicked % 2 == 1) {
+                    openFullscreen();
+                } else {
+                    closeFullscreen();
+                }
+            });
+
+            $("#closeBtn").click(function () {
+                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            });
+        });
+
+
 
     </script>
 
@@ -98,9 +140,9 @@
         <div class="title-bar">
             <div class="title-bar-text">Pong - The Game</div>
             <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
+                <button aria-label="Minimize" id="minimizeBtn"></button>
+                <button aria-label="Maximize" id="maximizeBtn"></button>
+                <button aria-label="Close" id="closeBtn"></button>
             </div>
         </div>
 
