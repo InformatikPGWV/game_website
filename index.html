@@ -129,13 +129,29 @@
         .comic {
             font-family: 'Comic Sans MS', 'Comic Sans';
         }
+
+        .rainbow {
+            background: red;
+            background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+            background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+            background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+            background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .xpBg {
+            background-image: url(http://getwallpapers.com/wallpaper/full/2/5/4/727006-best-windows-xp-desktop-backgrounds-3840x2160.jpg);
+            background-repeat: no-repeat;
+        }
     </style>
 
 </head>
 
-<body class="">
+<body class="xpBg">
 
-    <div class="window">
+    <div class="mx-10 my-5 window">
         <div class="title-bar">
             <div class="title-bar-text">Pong - The Game</div>
             <div class="title-bar-controls">
@@ -149,10 +165,12 @@
         <div class="window-body font-sans text-base">
 
             <div class="flex justify-center text-4xl comic">
-                <h1>Pong - Das Spiel</h1>
+                <div class="rainbow">
+                    <h1>Pong - Das Spiel</h1>
+                </div>
             </div>
 
-            <div class=" flex justify-center">
+            <div class="flex justify-center">
                 <p class="text-xl comic">Du wolltest schon immer Pong mit deinen Freunden spielen? - Wir auch nicht...
                     Das Spiel
                     haben
