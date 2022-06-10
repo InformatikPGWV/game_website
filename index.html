@@ -66,6 +66,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
 
 
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Customization ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 
@@ -88,115 +91,145 @@
 
 </head>
 
-<body class="font-sans bg-gray-900 text-white">
+<body class="">
 
-    <div class="flex justify-center text-4xl comic">
-        <h1>Pong - Das Spiel</h1>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Pong - The Game</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <!-- CONTENT HERE -->
+        <div class="window-body font-sans text-xl">
+
+            <div class="flex justify-center text-4xl comic">
+                <h1>Pong - Das Spiel</h1>
+            </div>
+
+            <div class=" flex justify-center">
+                <p class="text-xl comic">Du wolltest schon immer Pong mit deinen Freunden spielen? - Wir auch nicht...
+                    Das Spiel
+                    haben
+                    wir aber trotzdem
+                    programmiert.</p>
+            </div>
+
+            <article>
+                <h2 class="comic text-4xl">Unsere Prinzipien:</h2>
+
+                <h3 class="comic">1.: Simplizität</h3>
+                <p>Unser Gamedesign beruht nicht, wie man vermuten könnte, auf Inkompetenz und fehlender Kreativität,
+                    sondern
+                    auf
+                    einem Design-Prinzip, welches wir "Ich glaube, so sah das früher aus. Also in den 80ern oder so".
+                    <br />
+                    Unser Fokus liegt auf den Hauptfarben des Monitors (Rot, Grün und Blau). Das würde uns deswegen
+                    sogar
+                    ermöglichen alle
+                    Farben mit nur
+                    <strong>DREI</strong> Bits darzustellen. Mit dem Trie-Baum bestimmt noch weniger. Das ist doch echt
+                    cool,
+                    oder? Das ist aber nur theoretisch so, weil
+                    uns der Speicherverbrauch egal ist (solange es nicht auf Replit läuft).
+                </p>
+
+                <h3 class="comic">2.: App</h3>
+                <p>Heutzutage gibt es für alles eine App. Für Kaffeemaschinen, Waschmaschinen und sogar Ventilatoren.
+                    Auch wir
+                    wollen dein Mobiltelefon unnötig zumüllen. Leider haben wir jedoch keine Lizenz für den App Store
+                    oder
+                    Google Play. Außerdem sind wir viel zu faul, jedes Mal die app neu hochzuladen und auf eine
+                    Genehmigung der
+                    Stores zu warten. Da war die <strong>Web App</strong> die nächstbeste Idee um dir zumindest Platz
+                    auf deinem
+                    Homeschreen zu rauben.
+                    Deswegen findest du auf <a
+                        href="https://game.astrago.de">http<strong>s</strong>://game.astrago.de</a> (Ja,
+                    im Gegensatz zur Schulwebsite ist die sogar mit einem SSL-Zertifikat verschlüsselt) unseren
+                    Web-App-Spielecontroller.
+                </p>
+
+                <h3 class="comic">3.: Tankrabatt</h3>
+                <p>Unser Spiel funktioniert ohne Benzin und sogar <strong>OHNE DIESEL</strong> (dadurch müssen wir dann
+                    auch
+                    keine Angst vor einem Abgas Skandal haben.). Deswegen ist es nicht so
+                    schlimm, dass der Tankrabatt nicht so
+                    funktioniert, wie wir es uns erhofft haben. Hast du dennoch Lust, deinen PC nach dem vierten
+                    Rage-Quit zu
+                    verbrennen, stellen wir dir gerne Benzin oder vergleichbare Brennstoffe zur Verfügung, um deiner Wut
+                    ausdruck zu verleihen. Wir haften jedoch nicht für die Schäden. <br />
+                    Tipp: Liegt dir die Umwelt besonders am Herzen, verwende einfach ein <span
+                        style="color: #00ff00">grünes</span>
+                    Kabel für deinen PC und färbe
+                    deinen Strom <span style="color: #00ff00">grün</span> ein (zum Beispiel mit <span
+                        style="color: #00ff00">grüner</span> Lebensmittelfarbe) für 100%
+                    <span style="color: #00ff00">grüne</span> Energie.
+                </p>
+            </article>
+
+            <article>
+                <h1 class="comic text-4xl">Gruppenaufteilung:</h1>
+
+                <ul>
+                    <li>Leif: <a href="https://youtu.be/VtwXU0J3dng&t=27">siehe Video</a></li>
+                    <li>Jonas: Grafiken & Design</li>
+                    <li>Joel: Spielentwicklung (Gamecode)</li>
+                    <li>Justus: App & Server</li>
+                </ul>
+            </article>
+
+            <article>
+                <h1 class="text-4xl comic">Der Code:</h1>
+
+                <h2 class="comic">Das Spiel...</h2>
+
+                <h3 class="comic">findest du auf <a href="https://github.com/InformatikPGWV/game_pong">GitHub</a></h3>
+                <p>
+                </p>
+
+                <h2 class="comic">Die App...</h2>
+
+                <h3>findest du auf <a href="https://github.com/InformatikPGWV/game_app">GitHub</a></h3>
+                <p>
+                </p>
+
+                <h2 class="comic">Den Server...</h2>
+
+                <h3>findest du auf <a href="https://github.com/InformatikPGWV/game_server">GitHub</a></h3>
+                <p>
+                </p>
+
+                <h2 class="comic">Die Website...</h2>
+
+                <h3>hast du gerade geöffnet. <span class="text-xs"> Du findest sie aber auch auf <a
+                            href="https://github.com/InformatikPGWV/game_website">GitHub</a></>
+                </h3>
+                <p>
+                </p>
+
+            </article>
+
+
+
+            <!-- =============================================================================================================================== -->
+
+            <hr />
+
+            <p>(C) vor drei Tagen abgelaufen. Im Gegensatz zum SSL-Zertifikat der Schulwebsite (Was nicht da ist, kann
+                schließlich auch nicht
+                ablaufen. Clever!)</p>
+
+            <p>PS: Wir würden uns sehr über ein SSL-Zertifikat auf der Schulwebsite freuen.</p>
+            <p>PPS: Und jetzt genieße puren Spielspaß (Ja, das ist ein Befehl, weil Imperativ und so)!</p>
+
+        </div>
     </div>
 
-    <div class=" flex justify-center">
-        <p class="text-xl comic">Du wolltest schon immer Pong mit deinen Freunden spielen? - Wir auch nicht... Das Spiel
-            haben
-            wir aber trotzdem
-            programmiert.</p>
-    </div>
 
-    <article>
-        <h2 class="comic text-4xl">Unsere Prinzipien:</h2>
-
-        <h3 class="comic">1.: Simplizität</h3>
-        <p>Unser Gamedesign beruht nicht, wie man vermuten könnte, auf Inkompetenz und fehlender Kreativität, sondern
-            auf
-            einem Design-Prinzip, welches wir "Ich glaube, so sah das früher aus. Also in den 80ern oder so". <br />
-            Unser Fokus liegt auf den Hauptfarben des Monitors (Rot, Grün und Blau). Das würde uns deswegen sogar
-            ermöglichen alle
-            Farben mit nur
-            <strong>DREI</strong> Bits darzustellen. Mit dem Trie-Baum bestimmt noch weniger. Das ist doch echt cool,
-            oder? Das ist aber nur theoretisch so, weil
-            uns der Speicherverbrauch egal ist (solange es nicht auf Replit läuft).
-        </p>
-
-        <h3 class="comic">2.: App</h3>
-        <p>Heutzutage gibt es für alles eine App. Für Kaffeemaschinen, Waschmaschinen und sogar Ventilatoren. Auch wir
-            wollen dein Mobiltelefon unnötig zumüllen. Leider haben wir jedoch keine Lizenz für den App Store oder
-            Google Play. Außerdem sind wir viel zu faul, jedes Mal die app neu hochzuladen und auf eine Genehmigung der
-            Stores zu warten. Da war die <strong>Web App</strong> die nächstbeste Idee um dir zumindest Platz auf deinem
-            Homeschreen zu rauben.
-            Deswegen findest du auf <a href="https://game.astrago.de">http<strong>s</strong>://game.astrago.de</a> (Ja,
-            im Gegensatz zur Schulwebsite ist die sogar mit einem SSL-Zertifikat verschlüsselt) unseren
-            Web-App-Spielecontroller.
-        </p>
-
-        <h3 class="comic">3.: Tankrabatt</h3>
-        <p>Unser Spiel funktioniert ohne Benzin und sogar <strong>OHNE DIESEL</strong> (dadurch müssen wir dann auch
-            keine Angst vor einem Abgas Skandal haben.). Deswegen ist es nicht so
-            schlimm, dass der Tankrabatt nicht so
-            funktioniert, wie wir es uns erhofft haben. Hast du dennoch Lust, deinen PC nach dem vierten Rage-Quit zu
-            verbrennen, stellen wir dir gerne Benzin oder vergleichbare Brennstoffe zur Verfügung, um deiner Wut
-            ausdruck zu verleihen. Wir haften jedoch nicht für die Schäden. <br />
-            Tipp: Liegt dir die Umwelt besonders am Herzen, verwende einfach ein <span
-                style="color: #00ff00">grünes</span>
-            Kabel für deinen PC und färbe
-            deinen Strom <span style="color: #00ff00">grün</span> ein (zum Beispiel mit <span
-                style="color: #00ff00">grüner</span> Lebensmittelfarbe) für 100%
-            <span style="color: #00ff00">grüne</span> Energie.
-        </p>
-    </article>
-
-    <article>
-        <h1 class="comic text-4xl">Gruppenaufteilung:</h1>
-
-        <ul>
-            <li>Leif: <a href="https://youtu.be/VtwXU0J3dng&t=27">siehe Video</a></li>
-            <li>Jonas: Grafiken & Design</li>
-            <li>Joel: Spielentwicklung (Gamecode)</li>
-            <li>Justus: App & Server</li>
-        </ul>
-    </article>
-
-    <article>
-        <h1 class="text-4xl comic">Der Code:</h1>
-
-        <h2 class="comic">Das Spiel...</h2>
-
-        <h3 class="comic">findest du auf <a href="https://github.com/InformatikPGWV/game_pong">GitHub</a></h3>
-        <p>
-        </p>
-
-        <h2 class="comic">Die App...</h2>
-
-        <h3>findest du auf <a href="https://github.com/InformatikPGWV/game_app">GitHub</a></h3>
-        <p>
-        </p>
-
-        <h2 class="comic">Den Server...</h2>
-
-        <h3>findest du auf <a href="https://github.com/InformatikPGWV/game_server">GitHub</a></h3>
-        <p>
-        </p>
-
-        <h2 class="comic">Die Website...</h2>
-
-        <h3>hast du gerade geöffnet. <span class="text-xs"> Du findest sie aber auch auf <a
-                    href="https://github.com/InformatikPGWV/game_website">GitHub</a></>
-        </h3>
-        <p>
-        </p>
-
-    </article>
-
-
-
-    <!-- =============================================================================================================================== -->
-
-    <hr />
-
-    <p>(C) vor drei Tagen abgelaufen. Im Gegensatz zum SSL-Zertifikat der Schulwebsite (Was nicht da ist, kann
-        schließlich auch nicht
-        ablaufen. Clever!)</p>
-
-    <p>PS: Wir würden uns sehr über ein SSL-Zertifikat auf der Schulwebsite freuen.</p>
-    <p>PPS: Und jetzt genieße puren Spielspaß (Ja, das ist ein Befehl, weil Imperativ und so)!</p>
 
 </body>
 
