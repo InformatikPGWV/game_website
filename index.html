@@ -124,6 +124,8 @@
             $("#closeBtn").click(function () {
                 window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             });
+
+            $("#urlField").val("https://informatikpgwv.github.io/game_website/")
         });
 
     </script>
@@ -164,13 +166,20 @@
 
     <div class="mx-10 my-5 window">
         <div class="title-bar">
-            <div class="title-bar-text">Pong - Das Spiel (von Leif, Jonas, Joel und Justus)</div>
+            <div class="title-bar-text">Interner Explorer</div>
             <div class="title-bar-controls">
                 <button aria-label="Minimize" id="minimizeBtn"></button>
                 <button aria-label="Maximize" id="maximizeBtn"></button>
                 <button aria-label="Close" id="closeBtn"></button>
             </div>
         </div>
+
+        <div class="field-row-stacked my-2 mx-2">
+            <label for="text18">Address:</label>
+            <input id="urlField" type="text" />
+        </div>
+
+        <hr />
 
         <!-- CONTENT HERE -->
         <div class="window-body font-sans text-base">
@@ -302,7 +311,7 @@
 
                 <p>hast du gerade geöffnet. <span class="text-xs"> Du findest sie aber auch auf <a
                             href="https://github.com/InformatikPGWV/game_website">GitHub</a></p>
-                </>
+                </hr>
                 <p>
                 </p>
 
