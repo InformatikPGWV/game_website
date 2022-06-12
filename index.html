@@ -110,8 +110,7 @@
         $(document).ready(function () {
 
             // Preloader
-            $(".preloader").delay(1500).fadeOut(400);
-            $("#overlayer").delay(1500).fadeOut(400);
+            $("#overlayer").delay(3000).fadeOut(800);
 
             $("#minimizeBtn").click(function () {
                 window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -188,14 +187,29 @@
     <!-- PRELOADER -->
 
     <div id="overlayer">
-        <div class="flex justify-center">
+        <div class="flex justify-center mb-24">
             <h1 class="text-white font-sans">Loading...</h1>
         </div>
-        <a href="https://github.astrago.de">
-            <div class="flex justify-center">
+
+        <div class="flex justify-center">
+            <h4 class="text-white font-sans">Made with:</h4>
+        </div>
+
+        <div class="flex justify-center">
+            <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,jquery" width="300" alt="LOGO" />
+        </div>
+
+        <div class="flex justify-center">
+            <h4 class="text-white font-sans">Designed by</h4>
+        </div>
+
+        <div class="flex justify-center -translate-y-8">
+            <a href="https://github.astrago.de">
                 <img src="./astragode.png" width="300" alt="LOGO" />
-            </div>
-        </a>
+            </a>
+        </div>
+
+
     </div>
 
 
